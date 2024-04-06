@@ -15,3 +15,8 @@ crispy-bootstrap4 = "*"
 
 [requires]
 python_version = "3.11"
+
+[scripts]
+start = "python manage.py runserver"
+test = "pytest"
+lint = "flake8"
