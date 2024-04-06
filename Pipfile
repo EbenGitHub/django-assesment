@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 django = "*"
+djangorestframework = "*"
+drf-spectacular = "*"
+django-allauth = "*"
+django-crispy-forms = "*"
 
 [dev-packages]
 
