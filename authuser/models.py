@@ -31,8 +31,8 @@ class CustomUserManager(UserManager):
     
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True)
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
+    first_name = models.CharField(max_length=255, blank=True, null=True)
+    last_name = models.CharField(max_length=255, blank=True, null=True)
     username = models.CharField(max_length=255, unique=True, blank=True, null=True)
     role = models.CharField(max_length=25, choices=CustomUserManager.Roles.choices, default=CustomUserManager.Roles.FOOTBALL_PLAYER)
 

@@ -37,9 +37,10 @@
 
                 {% if user.is_superuser %}
                 <p class="card-text">Superuser: Yes</p>
+                {% endif %}
+
                 {% if user.role == 'admin' %}
                 <a class="btn btn-primary mb-3" href="/auth/users">See Lists of Users</a>
-                {% endif %}
                 {% endif %}
 
                 {% if user.is_staff %}
