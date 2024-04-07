@@ -7,10 +7,10 @@ WORKDIR /app
 
 RUN pip install pipenv
 COPY Pipfile Pipfile.lock /app/
-RUN pipenv install --deploy --system
+RUN pipenv install --deploy --system --ignore-pipfile
 
 COPY . /app/
 
 EXPOSE 8000
 
-CMD ["pipenv", "run", "start"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
