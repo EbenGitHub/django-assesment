@@ -155,6 +155,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'authuser.User'
 
+CSRF_TRUSTED_ORIGINS = ['https://django-assesment-1.onrender.com', 'http://localhost']
+
 SITE_ID = 1
 
 # LOGIN_URL = '/login/'
