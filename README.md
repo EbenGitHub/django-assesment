@@ -44,6 +44,21 @@ pipenv run start
     - `/accounts/login/` login
     - `/accounts/signup/` sign up for new account
     - `/accounts/password/reset/` forgot password / password reset
+    - `/accounts/reauthenticate/` account reauthenticate
+    - `/accounts/password/change/` change account password
+    - `/accounts/password/set/` set account password
+    - `/accounts/inactive/` account inactive
+    - `/accounts/confirm-email/` verify email
+    - `/accounts/^confirm-email/` confirm email account
+    - `/accounts/password/reset/` password reset
+    - `/accounts/password/reset/done/` password reset done
+    - `/accounts/^password/reset/key/` account reset from key
+    - `/accounts/password/reset/key/done/` account reset from key done
+    - `/accounts/social/` social authentication
+    - `/accounts/google/` google authentication
+    - `/accounts/google/login/token/` google login by token
+    - `/accounts/facebook/` facebook authentication
+    - `/accounts/facebook/login/token/` facebook authentication by token
     - `/api/doc/` swagger documentation
     - `/api/schema/` schema documentaion
     - `/api/redoc/` redoc documentation
@@ -52,3 +67,11 @@ pipenv run start
     - role based resource access
     - password reset with allauth
     - signup with allauth
+    - customed template
+- packages
+    - django
+    - djangorestframework
+    - drf-spectacular
+    - django-allauth
+    - django-crispy-forms
+    - crispy-bootstrap4
