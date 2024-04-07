@@ -31,7 +31,7 @@ pipenv run start
     - customized and stylyzed the look and feel of default allauth template with bootstrap4 and crispyform
     - added swagger documentation using drf spectacular, custom decorators, custom user model, and serializer
     - used pipenv for package management.. all used package is found in pipefile, and make custom scripts to run for repetitive tasks such as running server, making migrations and applying migrations
-    - ad
+    - added proper documentation using readme file
 - rountes
     - `/admin/` admin site
     - `/auth/users/` to see lists of users (it requires admin role)
