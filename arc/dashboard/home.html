@@ -3,8 +3,8 @@
 {% block content %}
 <div class="text-center">
     <h2>Home</h2>
-    <p>Hello {{ user.first_name|default:"" }}!</p>
-    <p>Your Username: {{ user.username }}</p>
+    <p>Hello {{ user.first_name }}!</p>
+    <p>Your Username : {{ user }}</p>
 
     <div class="container">
         {% if user.is_authenticated %}
@@ -40,7 +40,7 @@
                 {% endif %}
 
                 {% if user.role == 'admin' %}
-                <a class="btn btn-primary mb-3" href="/auth/users.html">See Lists of Users</a>
+                <a class="btn btn-primary mb-3" href="/auth/users">See Lists of Users</a>
                 {% endif %}
 
                 {% if user.is_staff %}

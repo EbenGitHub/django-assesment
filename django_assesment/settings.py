@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'rest_framework',
     'authuser',
-        'allauth',
+    'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
@@ -193,6 +193,8 @@ SOCIALACCOUNT_PROVIDERS = {
         'GRAPH_API_URL': 'https://graph.facebook.com/v13.0',
     },
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_USERNAME_REQUIRED = False

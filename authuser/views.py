@@ -24,3 +24,11 @@ def user_lists(request):
     serializer = UserSerializer(users, many=True)
     print(users)
     return Response({'users': serializer.data}, status=status.HTTP_200_OK)
+
+@login_required
+@role_required('admin', return_template=True)
+@api_view(['GET'])
+def user_lists_template(request):
+    users = User.objects.all()
+    context = {'users': users}
+    return render(request, 'users/users-list.html', context)
