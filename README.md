@@ -15,6 +15,7 @@ Create a Django API with django rest framework
 ```shell
 pip install pipenv
 pipenv install
+pipenv shell
 pipenv run start
 ```
 - rountes
