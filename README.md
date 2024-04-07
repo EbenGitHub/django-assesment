@@ -32,6 +32,7 @@ pipenv run start
     - added swagger documentation using drf spectacular, custom decorators, custom user model, and serializer
     - used pipenv for package management.. all used package is found in pipefile, and make custom scripts to run for repetitive tasks such as running server, making migrations and applying migrations
     - added proper documentation using readme file
+    - added docker file and hosted it on onrender.com. site url `https://django-assesment-1.onrender.com`
 - rountes
     - `/admin/` admin site
     - `/auth/users/` to see lists of users (it requires admin role)
@@ -75,3 +76,5 @@ pipenv run start
     - django-allauth
     - django-crispy-forms
     - crispy-bootstrap4
+- deployed site url: https://django-assesment-1.onrender.com
+- repository url: https://github.com/ebengithub/django-assesment
